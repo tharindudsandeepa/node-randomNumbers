@@ -11,6 +11,6 @@ function generateNumbers(count){
     return Array.from(numbers);
 }
 
-const count=100;
+const count=10;
 const uniqueNumbers=generateNumbers(count);
 console.log(uniqueNumbers);
