@@ -2,8 +2,6 @@ const {v4:uuidv4}=require('uuid');
 
 function generateNumbers(count){
     const numbers=new Set();
-    const formatted=new Set();
-
     while(numbers.size<count){
       const randomNumber=uuidv4().replace(/-/g,'').replace(/\D/g,'').substring(0,8);
       const formattedNumber = `${randomNumber.substring(0, 2)}-${randomNumber.substring(2, 5)}-${randomNumber.substring(5)}`;
