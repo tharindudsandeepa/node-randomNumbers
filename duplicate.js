@@ -23,10 +23,11 @@ const numbers=[
     '56-805-462', '95-382-274', '22-105-517', '29-873-644', '77-703-549'
   ];
 
-function hasDuplicates(array){
+function hasDuplicatesValues(array){
     const uniqueValues= new Set(array);
     return uniqueValues.size!==array.length;
 }
 
-const result=hasDuplicates(numbers);
+
+const result=hasDuplicateValues(numbers);
 console.log(`Duplicate Exist: ${result}`);
